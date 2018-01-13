@@ -5,15 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Mega Corp - Career</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400i" rel="stylesheet"> // Added google font Roboto Condensed
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400i" rel="stylesheet"> <!-- Added google font Roboto Condensed -->
+
+    <link rel="stylesheet" type="text/css" media="screen" href="normalize.css" /> <!-- Standard css -->
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="style/main.css" /> <!-- Custom CSS -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- Social Media Icon link -->
+
 
     <script src="main.js"></script>
 </head>
 <body>
-    <div><!-- add container class here -->
+    <div class="container"><!-- add container class here -->
         <header>
-            <nav><!-- Here's the main nav -->
+            <nav class="navbar"><!-- Here's the main nav -->
+                <div>
+                    <h3 class="logo"><img src="images/MegaCorp_Wordmark-White-225x45.png" alt="Mega Corp logo"></h3><!-- -->
+                </div>
+
                 <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
@@ -22,12 +34,16 @@
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav><!-- End of nav -->
-            <h2>Careers</h2>
-        </header> <!-- end of header area -->
 
-        <div> <!-- header image -->
-            <img src="" alt=""/>
-        </div>
+            <div class="heroimg"> <!-- header image -->
+                <div class="bkgdimg">
+                    <img class="banner" src="images/career-business-meeting1.jpg">
+                    <h2>Careers</h2> 
+                    <h3>This is text...</h3>
+                </div>
+            </div>
+        </header> <!-- end of header area -->
+       
 
         <div><!-- Begin main content -->
             <h1>We build solutions.</h1>
@@ -49,49 +65,22 @@
             </main>
         </div><!-- End main content -->
         <footer>
-            <p>&copy; All rights reserved.</p>
-            <p>| Home || About || Products || Career || Contact |</p>
-            <p>|Social Media || links || Go || Here|</p>
+            <div>
+                <div>
+                    <p class="copy">&copy; All rights reserved.</p>
+                </div>
+
+                <div>
+                    <p class="copy"> | Home || About || Products || Career || Contact | </p>
+                </div>
+                        <ul class="copy">
+                            <li><a href="#" class="fa fa-facebook"></a></li>
+                            <li><a href="#" class="fa fa-twitter"></a></li>
+                            <li><a href="#" class="fa fa-linkedin"></a></li>
+                        </ul>
+                </div> 
+            </div>
         </footer>
     </div> <!-- End of containter tag -->
 </body>
 </html>
-
-<!-- Creating Form for Contact Page
-    <form action="index.html" method="Post">
-        <h2>How can we help you?</h2>
-        <label for="fullname">NAME</label>
-        <input type="text" id="fullname" name="contactname">
-
-        <label for="mail">EMAIL</label>
-        <input type="email" id="mail" name="contact_email">
-
-        <label for="shortmessage">MESSAGE</label>
-        <textarea id="shortmessage" name="contactmsg">
-        </textarea>
-        <button type="submit">SUBMIT</button>
-
-    </form> 
-
-<div id="after_submit"></div>
-<form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
-  <div class="row">
-    <label class="required" for="name">Your name:</label> &nbsp;&nbsp;&nbsp;
-    <input id="name" class="input" name="name" type="text" value="" size="30" /><br />
-    <span id="name_validation" class="error_message"></span>
-  </div>
-  <div class="row">
-    <label class="required" for="email">Your email:</label>&nbsp;&nbsp;&nbsp;
-    <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
-    <span id="email_validation" class="error_message"></span>
-  </div>
-  <div class="row">
-    <label class="required" for="message">Your message:</label>&nbsp;&nbsp;&nbsp;
-    <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
-    <span id="message_validation" class="error_message"></span>
-  </div>
-    
-    <input id="submit_button" type="submit" value="Send email" />
-</form>
-
--->

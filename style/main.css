@@ -1,0 +1,198 @@
+
+
+/* Add font for the browser to use */
+@import url('https://fonts.googleapis.com/css?family=Anton|Roboto+Condensed:300,300i,400,400i,700,700i|Teko:300,400,500,600,700');
+
+body, html {
+    font-family: 'Roboto Condensed', Arial, sans-serif;
+    font-size: 1.1em;
+    margin: 0;
+    padding: 0;
+    background-color: #454C4F;
+    background: linear-gradient(to left, rgba(0,0,0,1), rgba(11,170,235,1)); /* create background color for the page */
+}
+
+/* Navigation style */
+nav ul {
+    display: flex;
+    display: -webkit-flex;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    list-style-type: none;
+    background-color: #454c4f; /* For browsers that do not support gradients */
+    background: linear-gradient(to right, rgba(0,0,0,1), rgba(11,170,235,1)); /* Standard syntax (must be last) */
+}
+
+nav ul li a {
+    color: #ffffff;
+    padding: 1em;
+    display: block;
+    line-height: 1;
+    text-decoration-line: none;
+    -moz-text-decoration-line: none;
+}
+
+nav div:first-child {
+    background-color: #000000;
+}
+
+nav div:first-child h1 {
+    line-height: 0;
+    padding: 1em 0;
+    text-align: center;
+}   
+
+nav div:first-child h1, nav ul, footer div:first-child p, footer ul {
+    margin: 0;
+}
+
+/* Styling for larger devices */
+@media only screen and (min-width: 30em) {
+    nav {
+        display: flex;
+        justify-content: space-between; /* Puts logo and stacked nav on either side of the page */
+        align-items: center;
+    }
+
+    nav ul {
+        display: flex; /* Puts the nav in one row */
+        align-items: center; /* vertically align the nav bar */
+        flex-wrap: wrap; /* responsive nav */
+
+    }
+
+    nav div:first-child h1, footer div:first-child p {
+        padding: 0.68em; /* .7em changes the height of nav bar in the img side */
+        margin-left: 1.2em;
+    }
+
+    nav ul li {
+        border-bottom: none; /* removes bottom border */
+        margin-left: 2em;
+    }
+
+    nav ul li a:hover {
+        background-color: #3392C3;
+    }
+}
+
+h3.logo {
+    height: 38px;
+}
+
+/* End Navigation Style */
+
+
+h1, h2, h3, nav {
+    font-family: Anton, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container {
+    background: #ffffff; /* For browsers that do not support gradients */
+    /*background: linear-gradient(to right, rgba(0,11,170,235), rgba(0,0,0,1)); */ /* Standard syntax (must be last) */
+} 
+
+.bkgdimg {
+    background-color: #3392C3;
+    width: 100%;
+    display: block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.bkgdimg > .banner {
+    width: 100%;
+    display: block;
+}
+
+
+/* Styling for footer */
+footer {
+    float: center;
+    color: #ffffff;
+    margin: 0;
+    background-color: #454c4f; /* For browsers that do not support gradients */
+    background: linear-gradient(to right, rgba(0,0,0,1), rgba(11,170,235,1)); /* Standard syntax (must be last) */
+}
+
+footer ul {
+    display: inline-block;
+    list-style-type: none;
+}
+
+
+footer ul li {
+    float: left;
+    text-align: center;
+    align-items: center;
+
+}
+
+footer ul li a {
+    color: #ffffff;
+    padding: 1em;
+    display: block; 
+    text-align: right;
+    line-height: 1;
+    text-decoration-line: none;
+    -moz-text-decoration-line: none;
+    align-items: center !important; /* vertically aligns the footer */
+} 
+.copy {
+    float: left;
+    width: 31%;
+    margin: 0;
+    align-items: center; /* vertically aligns the footer */
+}
+
+footer div:first-child p {
+        line-height: 1em;
+        text-align: left;
+        padding: 1.5em 1em; /* .7em changes the height of nav bar in the img side */
+        margin-right: 1.2em;
+}
+
+footer a {
+        text-decoration-style: none;
+}
+
+footer ul li a:hover {
+        background-color: #3392C3;
+}
+
+p.footer-nav  {
+    width: 96%;
+    display: -webkit-flex; /* Safari centers text */
+    -webkit-justify-content: space-around; /* Safari 6.1+ */
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 2em !important;
+
+}
+
+/*footer div:first-child p, footer ul {
+    margin: 0;
+}
+
+footer ul li a {
+    text-decoration-line: none;
+    -moz-text-decoration-line: none
+}
+*/
+
+
+/* 
+header img {
+    background-color: #000000;
+}
+
+.herotxt {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    margin-top: 4em;
+} */
