@@ -12,6 +12,28 @@ body, html {
     background: linear-gradient(to left, rgba(0,0,0,1), rgba(11,170,235,1)); /* create background color for the page */
 }
 
+h1, h2, h3, nav {
+    font-family: Anton, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #3392C3;
+}
+
+h1 {
+    font-size: 3em;
+    
+}
+
+h2 {
+    font-size: 2.5em;
+}
+
+h3 {
+    font-size: 2.5em;
+}
+
+Footer {
+    font-size: .8em;
+}
+
 /* Navigation style */
 nav ul {
     display: flex;
@@ -78,16 +100,22 @@ nav div:first-child h1, nav ul, footer div:first-child p, footer ul {
     }
 }
 
-h3.logo {
-    height: 38px;
+p.logo {
+    padding: 0 3em;
+    margin: .34em 0 !important;
 }
 
 /* End Navigation Style */
 
 
-h1, h2, h3, nav {
-    font-family: Anton, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
+/*
+Font Size:
+h1: 3em
+h2: 2.5em
+h3: 2em
+Body: 1.4em
+Footer body: 0.8em
+*/
 
 .container {
     background: #ffffff; /* For browsers that do not support gradients */
@@ -95,9 +123,11 @@ h1, h2, h3, nav {
 } 
 
 .bkgdimg {
-    background-color: #3392C3;
+    background-color: #ffffff;
     width: 100%;
     display: block;
+    background-image: -webkit-image-set("images/career-business-meeting1.jpg");
+    background-image: image("images/career-business-meeting1.jpg")
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -111,6 +141,7 @@ h1, h2, h3, nav {
 
 /* Styling for footer */
 footer {
+    font-family: 'Roboto Condensed' 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     float: center;
     color: #ffffff;
     margin: 0;
@@ -146,6 +177,15 @@ footer ul li a {
     width: 31%;
     margin: 0;
     align-items: center; /* vertically aligns the footer */
+}
+
+.copy a {
+    text-decoration-line: none;
+}
+
+.copy a:hover {
+    color: #3392C3;
+    text-decoration-line: none;
 }
 
 footer div:first-child p {
