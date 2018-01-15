@@ -6,27 +6,42 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" media="screen" href="style/main.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="style/product.css" />
+    <link href="https://fonts.googleapis.com/css?family=Anton|Roboto+Condensed:300,300i,400,400i,700,700i|Teko:300,400,500,600,700" rel="stylesheet">
+    <script src="js/product.js"></script>
+    <script src="js/product_controller.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- Social Media Icon link -->
     <title>Products</title>
 </head>
 
 
 <body>
-    <header>
-        <h1>
-            Products
-        </h1>
-    </header>
-    <nav>
-        <!-- Here’s the main nav -->
-            <ul>
-                <li><a href=“#home”>Home</a></li>
-                <li><a href=“#about”>About</a></li>
-                <li><a href=“#products”>Products</a></li>
-                <li><a href=“#career”>Career</a></li>
-                <li><a href=“#contact”>Contact</a></li>
-            </ul>
-        <!-- End of nav -->
-    </nav>
+    <div class="container">
+    
+        <nav class="navbar"><!-- Here's the main nav -->
+                <header>
+
+                <div>
+                    <p class="logo"><a href="index.html"><img src="images/MegaCorp_Wordmark-White-225x45.png" alt="Mega Corp logo"></a></p><!-- -->
+                </div>
+
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#products">Products</a></li>
+                    <li><a href="index.html#career">Career</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav><!-- End of nav -->
+
+            <div class="bkgdimg">
+                    <p class="bkimg"><img src="images/career-business-meeting1.jpg"></p>
+                    <div class="herotxt">
+                            <h2>Products</h2>
+                            <button>Learn More</button>
+                    </div>
+                </div>
+                </header>
+    <div class="bodystyle">
         <p> Here at MegaCorp we provide the best experience in people management, without pesky limits
             for those tight deadlines!
         </p>
@@ -38,24 +53,25 @@
 
 
     <section> 
-        <div>
-        <div><a href="index.html#product_1"></a>
-            <div class="images_container"><a href="index.html#product_1"></a><img src="/images/product_images/darlene-finding.jpg" alt="Just need a trendy pentester once in a while?" height="200px" width="200px"></div> <!-- Darlene App -->
-            <div class="images_container"><a href="index.html#product_1"></a><img src="/images/product_images/bossy-boss-02.jpg" alt="Our Random Tech App to be Declared" height="200px" width="200px"></div>
-        </div>
-        <div>
-            <div class="textbox"><p>Crack that laptop!<br/>For those serious circumstances, have your worker's personal laptop stolen and DOXXED online! We guarantee corporate secrecy to whatever extreme.</p> </div>  
-            <div class="textbox"><p>Call-interrupt<br> Don't let deadlines get missed by chatty-cathy's. Our phone monitoring AI can detect any kind of happiness out of place in an official phone call! Guaranteed! </p></div>
-        </div>
+        <div class="product-item">
+            <div><a href="index.html#product_1"></a>
+                <div class="images_container"><a href="index.html#product_1"></a><img src="/images/product_images/darlene-finding.jpg" alt="Just need a trendy pentester once in a while?" ></div> <!-- Darlene App -->
+                <div class="textbox"><p>Crack that laptop!<br/>For those serious circumstances, have your worker's personal laptop stolen and DOXXED online! We guarantee corporate secrecy to whatever extreme.</p> </div>
+            </div>
+            <div> 
+                
+                <div class="images_container"><a href="index.html#product_1"></a><img src="/images/product_images/bossy-boss-02.jpg" alt="Our Random Tech App to be Declared"></div>
+                <div class="textbox"><p>Call-interrupt<br> Don't let deadlines get missed by chatty-cathy's. Our phone monitoring AI can detect any kind of happiness out of place in an official phone call! Guaranteed! </p></div>
+            </div>
         </div>  
     </section> 
 
     <section> 
-        <div>
+        <div class="product-item">
         <div>
             <a href="index.html#product_2"></a>
-            <div class="images_container"><a href="index.html#product_1"></a><img src="/images/product_images/keylogger.jpg" alt="Image of fingers on a keyboard" height="200px" width="200px"></div>
-            <div class="images_container"><a href="index.html#product_1"></a><img src="/images/product_images/mobile tracker.png" alt="Image of a phone with tracking software on it" height="200px" width="200px"></div>
+            <div class="images_container"><a href="index.html#product_1"></a><img src="/images/product_images/keyloggerweb.jpg" alt="Image of fingers on a keyboard" ></div>
+            <div class="images_container"><a href="index.html#product_1"></a><img src="/images/product_images/mobile tracker.png" alt="Image of a phone with tracking software on it"></div>
         </div>
         </div>
         <div>
@@ -67,11 +83,11 @@
 
 
     <section> 
-        <div>
+        <div class="product=item">
         <div>
             <a href="index.html#product_3"></a>
-            <div class="images_container"><a href="index.html#product_1"></a><img src="/images/product_images/camera monitor.jpg" alt="man with camera" height="200px" width="200px"></div>
-            <div class="images_container"><a href="index.html#product_1"></a><img src="/images/product_images/ding dong.jpg" alt="automated door bell with camera phone" height="200px" width="200px"></div>
+            <div class="images_container"><a href="index.html#product_1"></a><img src="/images/product_images/camera monitor.jpg" alt="man with camera"></div>
+            <div class="images_container"><a href="index.html#product_1"></a><img src="/images/product_images/ding dong.jpg" alt="automated door bell with camera phone"></div>
         </div>
         </div>
         <div>
@@ -83,11 +99,11 @@
 
 
     <section> <!--Six divs per section, two images, two textboxes, contained in two over arching divs, in this is Section 4 -->
-        <div>
+        <div class="product-item">
         <div>
             <a href="index.html#product_4"></a>
-            <div class="images_container"><a href="index.html#product_1"></a><img src="/images/product_images/cloaking device.jpg" alt="invisible man" height="200px" width="200px"></div>
-            <div class="images_container"><a href="index.html#product_1"></a><img src="/images/product_images/spyglasses.jpg" alt="intense spyglasses" height="200px" width="200px"></div>
+            <div class="images_container"><a href="index.html#product_1"></a><img src="/images/product_images/cloaking device.jpg" alt="invisible man"></div>
+            <div class="images_container"><a href="index.html#product_1"></a><img src="/images/product_images/spyglasses.jpg" alt="intense spyglasses"></div>
         </div>
         </div>
         <div>
@@ -104,11 +120,25 @@
 
      
 <script src="product_controller.js"></script>
+</div>
+</div>
+<footer>
+        <div>
+            <div>
+                <p class="copy">&copy; All rights reserved. Designed by Agile Snail.</p>
+            </div>
 
-    <footer>
-     
-            <p>&copy; 2018 MegaCorp</p>
-            </footer>
+            <div>
+                <p class="copy"> | <a href="index.html">Home</a>  <a href="index.html#about">About</a>  <a href="index.html#products">Products</a>  <a href="index.html#career">Career</a>  <a href="index.html#contact">Contact</a> | </p>
+            </div>
+                    <ul class="copy">
+                        <li><a href="#" class="fa fa-facebook"></a></li>
+                        <li><a href="#" class="fa fa-twitter"></a></li>
+                        <li><a href="#" class="fa fa-linkedin"></a></li>
+                    </ul>
+            </div> 
+        </div>
+    </footer>
 
             
 
