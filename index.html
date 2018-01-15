@@ -3,59 +3,72 @@
     <head>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Mega Corp.</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" media="screen" href="normalize.css" /> <!-- Standard css -->
-        <link rel="stylesheet" type="text/css" media="screen" href="style/main.css" />
+        <title>Mega Corp.</title>
+        <link rel="stylesheet" type="text/css" media="screen" href="style/normalize.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="style/index.css" />
+        <link href="https://fonts.googleapis.com/css?family=Anton|Roboto+Condensed:300,300i,400,400i,700,700i|Teko:300,400,500,600,700" rel="stylesheet">
         <script src="main.js"></script>
     </head>
 
     <body>
-        <div>
-           <header>
-                <h1>Mega Corp.</h1>
-                <p>"Privacy doesn't exist."</p>
+        <div><!-- START Nav Div -->
+          <nav class="main-nav"><!-- START Main Nav -->
+              <ul class="nav">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#products">Products</a></li>
+                  <li><a href="#career">Career</a></li>
+                  <li><a href="#contact">Contact</a></li>
+              </ul>
+          </nav><!-- END Main Nav -->
+        </div><!-- END Nav Div -->
+      
+      <header class="intro">
+        <img src="images/MegaCorp_Wordmark_Web-Blue.png" alt="Mega Corp">
+        <p>"Privacy doesn't exist."</p>
+      </header>
 
-                <nav><!-- Here’s the main nav <a href="">LogoHere</a> -->
-                    
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#products">Products</a></li>
-                        <li><a href="#career">Career</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </nav><!-- End of nav -->
-            </header>
+            <div class="wrapper"><!-- START Wrapper Div -->
+      <section class="about-sect" id="about"><!-- START "ABOUT" -->
+          <h2>About</h2>
+          <p>Here at Mega Corp, we believe having all the right tools is essential to the success of any project, activity, or working relationship.  Read more about who we are and what we stand for.</p>
+      </section><!-- END of "ABOUT" -->
 
-            <section id="about"><!-- "ABOUT" -->
-                <h2>About</h2>
-                <p>Here at Mega Corp, we believe having all the right tools is essential to the success of any project, activity, or working relationship.  Read more about who we are and what we stand for.</p>
-                <img src="images/main-page-header-background.jpg" alt="Mega Corp Headquarters looking skyward.">
-            </section><!-- End of "ABOUT" -->
-
-            <section id="products"><!-- "PRODUCTS" -->
-                <h2>Products</h2>
-                <p>Mega Corp offers you several ways to keep an eye on things when you cannot be there in person.  Be sure you can see the full picture with one of our products, whether it be our app to keep tabs on your employees and project status or our surveillance tools like our mobile GPS tracker.  Have a look at all we have to offer.</p>
-                <img src="images/mc-app-on-mobile.jpg" alt="Our best-selling App">
-                <img src="images/family.jpg" alt="The Baby Chip- keeping up with your most precious cargo.">
-                <img src="images/keyboard.jpg" alt="The #1 selling keylogger- see every stroke.">
-            </section><!-- End of "PRODUCTS" -->
-
-            <section id="career"><!-- "CAREER" -->
-                <h2>Career</h2>
-                <p>Are you interested in joining our team?  Search our current job openings.</p>
-                <img src="images/boss.jpg" alt="The Boss Man">
-            </section><!-- End of "CAREER" -->
-
-            <section id="contact"><!-- "CONTACT" -->
-                <h2>Contact</h2>
-                <p>Mega Corp always enjoys hearing from our clients.  Choose one of many ways to get in touch with us.</p>
-            </section><!-- End of "CONTACT" -->
-
-            <footer>
-                <p>&copy;Mega Corp. All rights reserved 2018. Designed by Agile Snails.</p>
-            </footer>
+      <section class="prod-sect" id="products"><!-- START "PRODUCTS" -->
+          <h2>Products</h2>
+          <p>Mega Corp offers you several ways to keep an eye on things when you cannot be there in person.  Be sure you can see the full picture with one of our products, whether it be our app to keep tabs on your employees and project status or our surveillance tools like our mobile GPS tracker.  Have a look at all we have to offer.</p>
+        <div class="product-row">
+          <img src="images/mc-app-on-mobile.jpg" alt="Our best-selling App">
+          <img src="images/family.jpg" alt="The Baby Chip- keeping up with your most precious cargo.">
+          <img src="images/keyboard.jpg" alt="The #1 selling keylogger- see every stroke.">
         </div>
+      </section><!-- END "PRODUCTS" -->
+
+            <section class="career-sect" id="career"><!-- START "CAREER" -->
+          <h2>Career</h2>
+          <p>Are you interested in joining our team?  Search our current job openings.</p>
+          <img src="images/boss.jpg" alt="The Boss Man">
+      </section><!-- END "CAREER" -->
+
+      <section class="contact-sect" id="contact"><!-- START "CONTACT" -->
+        <h2>Contact</h2>
+        <p>Mega Corp always enjoys hearing from our clients.  Choose one of many ways to get in touch with us.</p>
+        <form>
+          <fieldset>
+            <label for="name">Name:</label>
+              <input type="text" id="name" name="user_name">
+            <label for="mail">Email:</label>
+              <input type="email" id="mail" name="user_email">
+            <label for="password">Password:</label>
+              <input type="password" id="password" name="user_password">
+          </fieldset>
+        </form>
+      </section><!-- END "CONTACT" -->
+      </div><!-- END Wrapper Div -->
+
+      <footer>
+        <p class="copyright">&copy;Mega Corp. All rights reserved 2018. Designed by Agile Snails.</p>
+      </footer>
     </body>
 </html>
