@@ -59,6 +59,7 @@ nav ul {
     list-style-type: none;
     background-color: #454c4f; /* For browsers that do not support gradients */
     background: linear-gradient(to right, rgba(0,0,0,1), rgba(11,170,235,1)); /* Standard syntax (must be last) */
+    
 }
 
 nav ul li a {

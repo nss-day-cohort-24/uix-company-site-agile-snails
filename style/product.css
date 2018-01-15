@@ -11,6 +11,9 @@
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
+    align-content: left;
+    height: 200px; 
+    width: 200px; 
 }
 
 body {
@@ -27,5 +30,27 @@ body {
     padding: 10px;
     box-shadow: 1.5px;
 }
+/*
+.product-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: center;
+    width: 100%;
+  }
+*/
+header {
+    text-align: center;
+    background: url('main-page-header-background.jpg') no-repeat top center;
+    background-size: cover;
+    background-position: center top;
+    width: 100%;
+    padding-top: 60px;
+    line-height: 1.5;
+  }
 
+  .product-item{
 
+    
+  }
