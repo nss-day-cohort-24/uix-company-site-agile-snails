@@ -1,5 +1,3 @@
-
-
 /* Add font for the browser to use */
 @import url('https://fonts.googleapis.com/css?family=Anton|Roboto+Condensed:300,300i,400,400i,700,700i|Teko:300,400,500,600,700');
 
@@ -9,7 +7,45 @@ body, html {
     margin: 0;
     padding: 0;
     background-color: #454C4F;
-    background: linear-gradient(to left, rgba(0,0,0,1), rgba(11,170,235,1)); /* create background color for the page */
+    background: linear-gradient(to right, rgba(0,0,0,1), rgba(11,170,235,1)); /* create background color for the page */
+}
+
+h1, h2, h3, nav {
+    font-family: Anton, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #3392C3;
+}
+
+h1 {
+    font-size: 3em;
+    
+}
+
+h2 {
+    font-size: 2.5em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+p {
+    color: #ffffff;
+}
+
+p a {
+    color: #3392C3;
+}
+
+.bodystyle {
+    background-color: rgba(0, 0, 0, 0.75);    
+}
+
+.bodystyle p {
+    line-height: 1.2em;
+}
+
+footer {
+    font-size: .8em;
 }
 
 /* Navigation style */
@@ -54,6 +90,9 @@ nav div:first-child h1, nav ul, footer div:first-child p, footer ul {
         display: flex;
         justify-content: space-between; /* Puts logo and stacked nav on either side of the page */
         align-items: center;
+        position: fixed;
+        width: 100%;
+        z-index: 100;
     }
 
     nav ul {
@@ -78,44 +117,131 @@ nav div:first-child h1, nav ul, footer div:first-child p, footer ul {
     }
 }
 
-h3.logo {
-    height: 38px;
+p.logo {
+    padding: 0 3em;
+    margin: .34em 0 !important;
 }
 
 /* End Navigation Style */
 
-
-h1, h2, h3, nav {
-    font-family: Anton, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
+/* Start general page styling for main body */
 .container {
     background: #ffffff; /* For browsers that do not support gradients */
-    /*background: linear-gradient(to right, rgba(0,11,170,235), rgba(0,0,0,1)); */ /* Standard syntax (must be last) */
+
+    background: linear-gradient(to left, rgba(69, 76, 79, .3), rgba(143,182,201,.7));
 } 
 
 .bkgdimg {
-    background-color: #3392C3;
+    background-image: url("images/career-business-meeting1.jpg");
+    background-image: -webkit-image-set("images/career-business-meeting1.jpg");
+    height: 500px;
     width: 100%;
-    display: block;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    border-width: 3px;
+    background: linear-gradient(to left, rgba(69, 76, 79, .3), rgba(143,182,201,.7));
+} 
+
+.bkimg {
+    z-index: -100;
+    margin: 0;;
 }
 
-.bkgdimg > .banner {
+.herotxt {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #3392C3;
+    text-shadow: #454C4F 1px 1px;
+}
+
+.herotxt button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: .5em 1em;
+    color: #3392C3;
+    background-color: #000000;
+    text-align: center;
+    cursor: pointer;
+}
+
+.herotxt button:hover {
+    background-color: #454C4F;
+    color: #ffffff;
+}
+
+.bodystyle {
+    margin: 0;
+    padding: 2em 5em;
     width: 100%;
-    display: block;
+    align-content: center;
 }
 
+ol li {
+    color: #ffffff;
+    text-decoration-line: none;
+    line-height: 1.8em;
+}
+
+li a {
+    color: rgba(252, 252, 252, 1);
+}
+ ol li a:hover{
+     color: #3392C3;
+ }
+
+
+/* End general page styling for main body */
+
+/* Styling for form */
+form {
+    color: #000000;
+    margin: 1em;
+    padding: 2em;
+    border-color: rgba(255, 255, 255, 0.8) !important;
+    border: solid 1px;
+}
+
+input {
+    color: #b1b1b1;
+    font-size: .9em;
+    padding: .3em;
+    border-color: rgba(74, 73, 79, 0.527);
+    width: 75%;
+}
+
+.jobform {
+    width: 50%;
+    text-align: right;
+}
+
+.searchbtn {
+    border-color: rgba(74, 73, 79, 0.527);
+    border: solid 1px;
+    background-color: #3392C3;
+    color: #ffffff;
+    text-align: center;
+    padding: .1em;
+}
+
+
+
+/* End styling for form */
 
 /* Styling for footer */
 footer {
+    font-family: 'Roboto Condensed' 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     float: center;
     color: #ffffff;
     margin: 0;
     background-color: #454c4f; /* For browsers that do not support gradients */
-    background: linear-gradient(to right, rgba(0,0,0,1), rgba(11,170,235,1)); /* Standard syntax (must be last) */
+    /*background: linear-gradient(to left, rgba(0,0,0,1), rgba(11,170,235,.6)); /* Standard syntax (must be last) */
+    background: linear-gradient(to left, rgba(0,0,0,1), rgba(11,170,235,1)); /* create background color for the page */
 }
 
 footer ul {
@@ -148,6 +274,16 @@ footer ul li a {
     align-items: center; /* vertically aligns the footer */
 }
 
+.copy a {
+    text-decoration-line: none;
+    padding: 1em;
+}
+
+.copy a:hover {
+    color: #3392C3;
+    text-decoration-line: none;
+}
+
 footer div:first-child p {
         line-height: 1em;
         text-align: left;
@@ -172,27 +308,3 @@ p.footer-nav  {
     padding-bottom: 2em !important;
 
 }
-
-/*footer div:first-child p, footer ul {
-    margin: 0;
-}
-
-footer ul li a {
-    text-decoration-line: none;
-    -moz-text-decoration-line: none
-}
-*/
-
-
-/* 
-header img {
-    background-color: #000000;
-}
-
-.herotxt {
-    text-align: center;
-    position: absolute;
-    width: 100%;
-    height: auto;
-    margin-top: 4em;
-} */

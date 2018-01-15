@@ -23,55 +23,72 @@
         <header>
             <nav class="navbar"><!-- Here's the main nav -->
                 <div>
-                    <h3 class="logo"><img src="images/MegaCorp_Wordmark-White-225x45.png" alt="Mega Corp logo"></h3><!-- -->
+                    <p class="logo"><a href="index.html"><img src="images/MegaCorp_Wordmark-White-225x45.png" alt="Mega Corp logo"></a></p><!-- -->
                 </div>
 
                 <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#products">Products</a></li>
-                    <li><a href="#career">Career</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#products">Products</a></li>
+                    <li><a href="index.html#career">Career</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
                 </ul>
             </nav><!-- End of nav -->
 
-            <div class="heroimg"> <!-- header image -->
-                <div class="bkgdimg">
-                    <img class="banner" src="images/career-business-meeting1.jpg">
-                    <h2>Careers</h2> 
-                    <h3>This is text...</h3>
+            <div class="bkgdimg">
+                <p class="bkimg"><img src="images/career-business-meeting1.jpg"></p>
+                <div class="herotxt">
+                        <h2>Careers</h2>
+                        <button>Learn More</button>
                 </div>
             </div>
+            
         </header> <!-- end of header area -->
        
 
-        <div><!-- Begin main content -->
-            <h1>We build solutions.</h1>
+        <div class="bodystyle"><!-- Begin main content -->
+            <h3>Interested in working with us.</h3>
+            <p>Check out our job posting.</p>
             <main>
                 <section><!-- Text area -->
-                    <p>Text text text goes here.Text text text goes here.Text text text goes here.Text text text goes here.</p>
-                    <p>Look for all open opportunites</p>
+                    <p>We are Equal Opportunity Employer. We believe in non discremination with regard to race, sex, religion, nationality, age and disability.</p>
+                    <p>Look for all <a href="">open opportunites.</a></p>
 
                 </section><!-- End text area -->
-                <form action="/action_page.php">
-                    Keyword: &nbsp;&nbsp;&nbsp;&nbsp;
-                    <input type="text" name="position" value="Positon">
-                    <br>
-                    City, State: &nbsp;&nbsp;&nbsp;&nbsp;
-                    <input type="text" name="citystate" value="CityState">
-                    <br><br>
-                    <input type="search" value="Search">
-                </form> 
+
+                <div class="jobform">
+                    <form action="/action_page.php">
+                        <p>Keyword: &nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="text" name="position" value="Position"></p>
+                        <p>
+                        City, State: &nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="text" name="citystate" value="City, State"></p>                    
+                        <input type="search" value="Search" class="searchbtn">
+                    </form> 
+                </div>
+
+                <!-- List of jobs posted -->
+               <div>
+                   <h3>We're hiring the best of the best. Are you up for it?</h3>
+                   <ol>
+                       <li><a href="#">Instructional Designer,</a> Orlando, FL</li>
+                       <li><a href="#">Logistics Field Service Representative,</a> Las Vegas, NV</li>
+                       <li><a href="#">Logistics Field Service Representative,</a> Londonderry, NH</li>
+                       <li><a href="#">F-15 Integrated Avionics Comm/NAV Tech - Deployed,</a> Ogden, UT</li>
+                       <li><a href="#">F-15 Engine Maintenance Technician - Deployed,</a> Las Vegas, NV</li>
+                   </ol>
+                   <p><a href="#">More open positions...</a></p>
+               </div>
             </main>
         </div><!-- End main content -->
         <footer>
             <div>
                 <div>
-                    <p class="copy">&copy; All rights reserved.</p>
+                    <p class="copy">&copy; All rights reserved. Designed by Agile Snail.</p>
                 </div>
 
                 <div>
-                    <p class="copy"> | Home || About || Products || Career || Contact | </p>
+                    <p class="copy"> | <a href="index.html">Home</a>  <a href="index.html#about">About</a>  <a href="index.html#products">Products</a>  <a href="index.html#career">Career</a>  <a href="index.html#contact">Contact</a> | </p>
                 </div>
                         <ul class="copy">
                             <li><a href="#" class="fa fa-facebook"></a></li>
